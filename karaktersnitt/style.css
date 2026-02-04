@@ -1,0 +1,40 @@
+:root {
+    --main-bg-color: #191B1D;
+    --main-fg-color: rgb(202, 202, 202);
+    --logo-color1: #C1BEF5;
+    --logo-color3: #010756;
+    --snitt-width: 500px; 
+} 
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+h1, p, fieldset, label {
+    color: var(--main-fg-color);
+}
+
+.snitt-output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--logo-color1);
+    background-color: var(--logo-color3);
+    font-size: 50px;
+    width: var(--snitt-width);
+    border-radius: 5px;
+
+    gap: 10px;
+
+}
+
+.form-section-header {
+    font-size: 25px;
+    font-style: bold;
+    border: none;
+    padding: 0;
+}
+
+fieldset {
+  border-color: rgb(116, 116, 116);
+}

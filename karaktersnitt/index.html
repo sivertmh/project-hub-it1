@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karakterkalkulator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <img src="./media/smh.svg" alt="Min logo (Sivert)">
+        <h1>Karaktererkalkulator for 2IMI Kuben VGS</h1>
+        <p>Dette er en kalkulator for karaktersnitt.<br>Den regner ut snitt basert på alle karakterer, om du går
+            2IMI.<br>Rekkefølgen fagene kommer i, er basert på den som vises i Inschool. <br>Vennligst skriv inn
+            karakterer i skjemaet under.</p>
+        <form id="karakter-form">
+
+            <fieldset id="this-semester">
+                <legend class="form-section-header">Dette Semesteret</legend>
+            </fieldset>
+
+            <fieldset id="tidligere-standpunkt">
+                <legend class="form-section-header">Tidligere Standpunkt</legend>
+            </fieldset>
+
+            <br>
+            <input type="submit" value="Regn ut snitt" id="submit-btn">
+        </form>
+
+        <p class="snitt-output">Karaktersnitt:<span id="snitt-output"></span></p>
+    </main>
+</body>
+<script src="./main.js"></script>
+
+</html>

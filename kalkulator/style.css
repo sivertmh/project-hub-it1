@@ -1,0 +1,98 @@
+:root {
+  /* farger til nettsiden */
+  --bg-color: #191b1d;
+  --fg-color: #f6f6f6;
+  --primary-color: #586add;
+  --secondary-color: #c1bef5;
+  --third-color: #010756;
+  /* annet */
+  --btn-dimension: 75px;
+}
+
+@font-face {
+  font-family: typewriter;
+  src: url(./media/fonts/typewriter.ttf);
+}
+
+*:not(h1) {
+  font-size: calc(var(--btn-dimension) / 4);
+}
+
+h1 {
+  color: var(--fg-color);
+  text-align: center;
+  font-family: typewriter;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+input:focus {
+  outline: none;
+}
+
+input {
+  border-color: var(--primary-color);
+  width: calc(var(--btn-dimension) * 4);
+  height: var(--btn-dimension);
+  border-radius: 5px;
+}
+
+.calc-container {
+  width: calc(var(--btn-dimension) * 4);
+  margin-left: 41vw;
+  margin-top: 10vh;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.operations {
+  width: var(--btn-dimension);
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numbers {
+  width: calc(var(--btn-dimension) * 3);
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.triple-btn {
+  width: calc(var(--btn-dimension) * 3);
+  justify-content: center;
+}
+
+.double-btn {
+  width: calc(var(--btn-dimension) * 2);
+}
+
+button {
+  border-radius: 5px;
+  width: var(--btn-dimension);
+  height: var(--btn-dimension);
+  padding: 20px;
+
+  justify-content: center;
+}
+
+.operations button {
+  background-color: var(--primary-color);
+  color: var(--fg-color);
+  border-color: var(--secondary-color);
+}
+
+.numbers button {
+  background-color: var(--secondary-color);
+  color: var(--third-color);
+  border-color: var(--primary-color);
+}
